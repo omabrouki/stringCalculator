@@ -44,5 +44,9 @@ public class StringCalculatorTest {
         assertEquals(-2, stringCalculatorResult);
     }
 
-
+    @Test
+    public void withDelimiterSemiColon() {
+        int stringCalculatorWithDelimiter = StringCalculator.add("1;1");
+        Assert.assertEquals(2, stringCalculatorWithDelimiter);
+    }
 }
