@@ -49,4 +49,10 @@ public class StringCalculatorTest {
         int stringCalculatorWithDelimiter = StringCalculator.add("1;1");
         Assert.assertEquals(2, stringCalculatorWithDelimiter);
     }
+
+    @Test
+    public void withNumbersAndCarriageReturnShouldReturnTheSum() {
+        int stringCalculatorResult = StringCalculator.add("2\n2,1");
+        assertEquals(5, stringCalculatorResult);
+    }
 }
